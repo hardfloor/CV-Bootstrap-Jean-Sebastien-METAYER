@@ -110,6 +110,8 @@ h5 {
 #about {
     padding: 100px;
 
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 0)), to(rgb(254, 253, 255)));
+
     background: linear-gradient(rgb(0, 0, 0), rgb(254, 253, 255));
 }
 
@@ -147,6 +149,7 @@ h5 {
     background: rgb(254, 253, 255);
     color: rgb(0, 0, 156);
     text-decoration: none;
+    -webkit-transition: all 0.5s ease-in;
     transition: all 0.5s ease-in;
 }
 
@@ -185,6 +188,7 @@ h5 {
 
 /* experience experience experience experience experience experience experience experience experience experience experience experience experience experience experience experience experience experience*/
 #experience {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(254, 253, 255)), to(rgb(0, 0, 0)));
     background: linear-gradient(rgb(254, 253, 255), rgb(0, 0, 0))
 }
 
@@ -321,6 +325,8 @@ h5 {
 
 #education {
 
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 0)), to(rgb(254, 253, 255)));
+
     background: linear-gradient(rgb(0, 0, 0), rgb(254, 253, 255));
 }
 
@@ -381,6 +387,7 @@ h5 {
 /* portfolio portfolio portfolio portfolio portfolio portfolio portfolio portfolio portfolio portfolio portfolio portfolio portfolio portfolio*/
 
 #portfolio {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(254, 253, 255)), to(rgb(0, 0, 0)));
     background: linear-gradient(rgb(254, 253, 255), rgb(0, 0, 0))
 }
 
@@ -418,7 +425,10 @@ h2 {
 }
 
 .carousel-item {
+    -webkit-transition: opacity .5s ease-out, -webkit-transform 4s ease;
+    transition: opacity .5s ease-out, -webkit-transform 4s ease;
     transition: transform 4s ease, opacity .5s ease-out;
+    transition: transform 4s ease, opacity .5s ease-out, -webkit-transform 4s ease;
 }
 
 .carousel-indicators li {
