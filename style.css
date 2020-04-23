@@ -397,6 +397,11 @@ h5 {
 
 /* portfolio portfolio portfolio portfolio portfolio portfolio portfolio portfolio portfolio portfolio portfolio portfolio portfolio portfolio*/
 
+#portfolio .row .ol-sm{
+    display: flex;
+    justify-content: center;
+}
+
 #portfolio {
     background: -webkit-gradient(linear, left top, left bottom, from(rgb(254, 253, 255)), to(rgb(12, 1, 117)));
     background: linear-gradient(rgb(254, 253, 255), rgb(12, 1, 117))
@@ -501,7 +506,10 @@ footer .fa-chevron-circle-up {
         font-size: 1.2em;
     }
 }
-
+#portfolio .row .col-sm-4 {
+    display: flex;
+    justify-content: center;
+}
 @media screen and (max-width:414px) {
 
     #about .heading a{
@@ -527,6 +535,7 @@ footer .fa-chevron-circle-up {
         height: auto;
     }
 
+ 
     #hobbies .heading {
         margin: 0;
     }
@@ -562,5 +571,7 @@ footer .fa-chevron-circle-up {
 
     }
 
-
+.text-center .h5{
+    font-size: 5px;
+}
 }
