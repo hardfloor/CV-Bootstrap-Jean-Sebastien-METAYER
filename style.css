@@ -71,7 +71,8 @@ h5 {
     letter-spacing: 1px;
     text-transform: uppercase;
     font-weight: bold;
-    background: rgb(0, 0, 0) !important;
+    background: rgb(12, 1, 117) !important;
+    
 }
 
 .navbar .navbar-nav {
@@ -81,7 +82,8 @@ h5 {
 
 
 .navbar-collapse {
-    text-align: center;
+    display:flex;
+    justify-content: center;
 }
 
 .navbar li a {
@@ -113,7 +115,7 @@ h5 {
 
     background: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 0)), to(rgb(254, 253, 255)));
 
-    background: linear-gradient(rgb(0, 0, 0), rgb(254, 253, 255));
+    background: linear-gradient(rgb(12, 1, 117), rgb(254, 253, 255));
 }
 
 .profile-picture {
@@ -126,13 +128,21 @@ h5 {
 #about .heading h1 {
     color: #fff;
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
 }
+
 
 #about .heading h3 {
 
     color: #000000;
+    text-align: center;
 }
-
+#about .heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 .button1 {
     font-weight: bold;
@@ -148,7 +158,7 @@ h5 {
 
 .button1:hover {
     background: rgb(254, 253, 255);
-    color: rgb(0, 0, 156);
+    color:rgb(12, 1, 117);
     text-decoration: none;
     -webkit-transition: all 0.5s ease-in;
     transition: all 0.5s ease-in;
@@ -189,8 +199,8 @@ h5 {
 
 /* experience experience experience experience experience experience experience experience experience experience experience experience experience experience experience experience experience experience*/
 #experience {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgb(254, 253, 255)), to(rgb(0, 0, 0)));
-    background: linear-gradient(rgb(254, 253, 255), rgb(0, 0, 0))
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(254, 253, 255)), to(rgb(12, 1, 117)));
+    background: linear-gradient(rgb(254, 253, 255), rgb(12, 1, 117))
 }
 
 #experience .heading h2 {
@@ -326,9 +336,9 @@ h5 {
 
 #education {
 
-    background: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 0)), to(rgb(254, 253, 255)));
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(12, 1, 117)), to(rgb(254, 253, 255)));
 
-    background: linear-gradient(rgb(0, 0, 0), rgb(254, 253, 255));
+    background: linear-gradient(rgb(12, 1, 117), rgb(254, 253, 255));
 }
 
 #education .fa-graduation-cap {
@@ -388,8 +398,8 @@ h5 {
 /* portfolio portfolio portfolio portfolio portfolio portfolio portfolio portfolio portfolio portfolio portfolio portfolio portfolio portfolio*/
 
 #portfolio {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgb(254, 253, 255)), to(rgb(0, 0, 0)));
-    background: linear-gradient(rgb(254, 253, 255), rgb(0, 0, 0))
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(254, 253, 255)), to(rgb(12, 1, 117)));
+    background: linear-gradient(rgb(254, 253, 255), rgb(12, 1, 117))
 }
 
 #portfolio .heading h2 {
@@ -454,7 +464,7 @@ h2 {
 }
 
 footer {
-    background: rgb(0, 0, 0);
+    background: rgb(12, 1, 117);
     height: 100px;
 }
 
@@ -473,6 +483,12 @@ footer .fa-chevron-circle-up {
 /*mediaqueries mediaqueries mediaqueries mediaqueries mediaqueries mediaqueries mediaqueries mediaqueries mediaqueries mediaqueries*/
 @media screen and (max-width:1024px) {
 
+    .navbar {
+
+        font-size: 10px;
+        text-align: center;
+    }
+
     #skills h5 {
         font-size: 1.5em
     }
@@ -487,6 +503,12 @@ footer .fa-chevron-circle-up {
 }
 
 @media screen and (max-width:414px) {
+
+    #about .heading a{
+       
+        display: flex;
+        justify-content: center;
+    }
 
     #skills h5 {
         font-size: 1.1em
